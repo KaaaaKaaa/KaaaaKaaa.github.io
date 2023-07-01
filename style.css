@@ -2,42 +2,44 @@
 {
     padding: 0%;
     margin: 0%;
+    font-family: Montserrat Alternates;
     box-sizing: border-box;
+    
 }
 
-.corpo{
-
+.corpo, .corpo2 {
     background-image: url(img/fundoBolas.png);
     background-repeat: no-repeat;
-    padding: 0px;
-    margin: 0%;
-    display:block;
-    width: 1280px;
-    height: 2107px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 80rem; /* Convert 1280px to rem */
+    height: 132.9375rem; /* Convert 2107px to rem */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+  
 }
 
-.foto1{
-    margin: 0px;
-    padding: 0px;
-    width: 1280px;
-    height: 790px;
+.foto1 {
+    margin: 0;
+    padding: 0;
+    width: 80rem; /* Convert 1280px to rem */
+    height: 49.375rem; /* Convert 790px to rem */
     flex-shrink: 0;
-    position:static;
+    position: static;
     background: url(img/fundoAzulLaranja.png), lightgray 50% / cover no-repeat;
 }
 
-.navbar{
+
+.navbar,.navbar2,.rodapeCen{
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.BarraPesquisa{
+.BarraPesquisa,.BarraPesquisa2{
     display: flex;
     border: none;
     border-radius: 100px;
@@ -45,33 +47,33 @@
     margin-right: 30px;
 }
 
-.pesquisa{
+.pesquisa,.pesquisa2{
     background: none;
     border: none;
     margin-left: 10px;
     
 }
 
-.lupa{
+.lupa,.lupa2{
     width: 30px;
     height: 30px;
     flex-shrink: 0;
     margin: 15px;
 }
 
-.barraItens {
+.barraItens,.barraItens2,.rodapeSocial{
     list-style: none;
     display: flex;
     
 }
 
-.barraItens>li {
+.barraItens>li,.barraItens2>li,.rodapeSocial>li{
     padding-left: 20px;
     padding-top: 15px;
 
 }
 
-.logo{
+.logo,.logo2,.rodapeLogo{
     width: auto;
     height: auto;
 }
@@ -185,7 +187,6 @@
     flex-shrink: 0;
     color: rgba(25, 89, 115, 0.80);
     font-size: 48px;
-    font-family: Montserrat Alternates;
     font-weight: 700;
     line-height: normal;
 }
@@ -197,6 +198,7 @@
     border-radius: 100px;
     border: 5px solid #F28705;
     background: #F28705;
+    margin-bottom: 36pc;
 }
 
 .botaoTexto{
@@ -211,8 +213,43 @@
     flex-shrink: 0;
     color: #FFF;
     font-size: 18px;
-    font-family: Montserrat Alternates;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.botaoIcon{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-top: -20px;
+    margin-left: 275px;
+}
+
+
+.Rodape{
+    height: 80ph;
+    padding: 4.0 rem 3.5 rem;
+    margin: 0;
+    letter-spacing: 0.5rem;
+    width: 100%;
+    background-color: #195973;
+    
+    
+}
+
+.rodapeCop{
+    margin-left: 40%;
+    padding-bottom: 4%;
+    color: #FFF;
+    
+}
+
+.rodapeLogo{
+    margin: 3%;
+}
+
+.rodapeNumero{
+    margin: 5%;
+    color: #FFF;
 }
