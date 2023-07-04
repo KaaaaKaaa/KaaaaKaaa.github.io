@@ -7,14 +7,14 @@
     
 }
 
-.corpo, .corpo2 {
-    background-image: url(img/fundoBolas.png);
+.corpo {
+    background-image: url(img/fundoBolinha1.png);
     background-repeat: no-repeat;
     padding: 0;
     margin: 0;
     display: block;
-    width: 80rem; /* Convert 1280px to rem */
-    height: 132.9375rem; /* Convert 2107px to rem */
+    width: 85rem; 
+    height: 132.9375rem; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -24,15 +24,15 @@
 .foto1 {
     margin: 0;
     padding: 0;
-    width: 80rem; /* Convert 1280px to rem */
-    height: 49.375rem; /* Convert 790px to rem */
+    width: 85rem; 
+    height: 46rem; 
     flex-shrink: 0;
     position: static;
-    background: url(img/fundoAzulLaranja.png), lightgray 50% / cover no-repeat;
+    background: url(img/abstract_blur_background_with_beach_themed_design_2701\ 1.png), lightgray 50% / cover no-repeat;
 }
 
 
-.navbar,.navbar2,.rodapeCen{
+.navbar,.navbar2,.rodapeCen,.rodapeCen2{
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
@@ -61,25 +61,25 @@
     margin: 15px;
 }
 
-.barraItens,.barraItens2,.rodapeSocial{
+.barraItens,.barraItens2,.rodapeSocial,.rodapeSocial2{
     list-style: none;
     display: flex;
     
 }
 
-.barraItens>li,.barraItens2>li,.rodapeSocial>li{
+.barraItens>li,.barraItens2>li,.rodapeSocial>li,.rodapeSocial2>li{
     padding-left: 20px;
     padding-top: 15px;
 
 }
 
-.logo,.logo2,.rodapeLogo{
+.logo,.logo2,.rodapeLogo,.rodapeLogo2{
     width: auto;
     height: auto;
 }
 
 .flor{
-    margin-top: 25%;
+    margin-top: 40%;
     padding: 0%;
 }
 
@@ -198,7 +198,7 @@
     border-radius: 100px;
     border: 5px solid #F28705;
     background: #F28705;
-    margin-bottom: 36pc;
+    
 }
 
 .botaoTexto{
@@ -228,9 +228,8 @@
 
 
 .Rodape{
-    height: 80ph;
-    padding: 4.0 rem 3.5 rem;
-    margin: 0;
+    margin-top: 650px;
+    margin-bottom: -11px;
     letter-spacing: 0.5rem;
     width: 100%;
     background-color: #195973;
@@ -239,7 +238,7 @@
 }
 
 .rodapeCop{
-    margin-left: 40%;
+    margin-left: 35%;
     padding-bottom: 4%;
     color: #FFF;
     
@@ -250,6 +249,217 @@
 }
 
 .rodapeNumero{
-    margin: 5%;
+    padding-left: 35%;
+    padding-right: 20%;
+    margin: 1%;
     color: #FFF;
 }
+
+.rodapeSocial{
+    margin-left: 50%;
+}
+
+#slider {
+    margin: 0 auto;
+    width: 810px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor:pointer;
+    text-decoration: none;
+}
+
+#slides {
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 310px;
+}
+
+#slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: transparent;
+}
+
+#slides .slide_1 {
+    background-image: url(img/veterinarioTransparente.png);
+}
+
+#slides .slide_2 {
+    background-image: url(img/veterinarioTransparente.png);
+}
+
+#slides .slide_3 {
+    background-image: url(img/veterinarioTransparente.png);
+}
+
+#slides .slide_4 {
+    background-image: url(img/veterinarioTransparente.png);
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 180px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+    background: #F28705;
+}
+ 
+.cartao{
+    border: solid 1px #195973;
+    box-sizing: border-box;
+}
+
+.cartao1{
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 10px solid #FFF;
+    background: #F2B90F;
+    width: 488px;
+    height: 744px;
+    margin-top: 100px;
+    margin-left: 760px;
+    margin-right: 716px;
+    margin-bottom: 116px;
+}
+
+.cartao2{
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 10px solid #FFF;
+    background: #F2B90F;
+    width: 488px;
+    height: 744px;
+    margin-top: -864px;
+    margin-left: 69px;
+    margin-right: 99px;
+    margin-bottom: 116px;
+}
+
+.cartao3{
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 10px solid #FFF;
+    background: #F2B90F;
+    width: 488px;
+    height: 744px;
+    margin-top: 100px;
+    margin-left: 760px;
+    margin-right: 716px;
+    margin-bottom: 116px;
+}
+
+.cartao4{
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 10px solid #FFF;
+    background: #F2B90F;
+    width: 488px;
+    height: 744px;
+    margin-top: -864px;
+    margin-left: 69px;
+    margin-right: 99px;
+    margin-bottom: 116px;
+}
+
+.imagemC{
+    width: 350px;
+    height: 244px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    margin-top: 56px;
+    margin-left: 69px;
+    margin-right: 69px;
+    margin-bottom: 444x;
+    background: url(img/imageskids\ 1.png), lightgray 50% / cover no-repeat;
+}
+ 
