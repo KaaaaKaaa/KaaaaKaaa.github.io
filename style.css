@@ -8,17 +8,30 @@
 }
 
 .corpo {
-    background-image: url(img/fundoBolinha1.png);
     background-repeat: no-repeat;
     padding: 0;
     margin: 0;
     display: block;
-    width: 85rem; 
-    height: 132.9375rem; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
   
+}
+
+.corpo1{
+    width: 85rem;  
+    background-image: url(img/MacBook\ Air\ -\ 2bolinhas22.png);
+}
+
+.corpo2{
+    width: 85rem;  
+    background-image: url(img/MacBook\ Air\ -\ 2bolinhas2.png);
+}
+
+.corpo3{
+    width: 85rem; 
+    height: 100rem; 
+    background-image: url(img/MacBook\ Air\ -\ 2bolinhas2.png);
 }
 
 .foto1 {
@@ -31,15 +44,16 @@
     background: url(img/abstract_blur_background_with_beach_themed_design_2701\ 1.png), lightgray 50% / cover no-repeat;
 }
 
-
-.navbar,.navbar2,.rodapeCen,.rodapeCen2{
+.navbar,.navbar3,.rodapeCen{
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.BarraPesquisa,.BarraPesquisa2{
+
+
+.BarraPesquisa{
     display: flex;
     border: none;
     border-radius: 100px;
@@ -47,7 +61,7 @@
     margin-right: 30px;
 }
 
-.pesquisa,.pesquisa2{
+.pesquisa{
     background: none;
     border: none;
     margin-left: 10px;
@@ -61,13 +75,13 @@
     margin: 15px;
 }
 
-.barraItens,.barraItens2,.rodapeSocial,.rodapeSocial2{
+.barraItens,.barraItens2,.barraItens3,.rodapeSocial,.rodapeSocial2,.rodapeSocial3{
     list-style: none;
     display: flex;
     
 }
 
-.barraItens>li,.barraItens2>li,.rodapeSocial>li,.rodapeSocial2>li{
+.barraItens>li,.barraItens2>li,.barraItens3>li,.rodapeSocial>li,.rodapeSocial2>li,.rodapeSocial3>li{
     padding-left: 20px;
     padding-top: 15px;
 
@@ -201,6 +215,10 @@
     
 }
 
+.botao2,.botao3,.botao4,.botao5{
+    margin-left: 10%;
+}
+
 .botaoTexto{
     background: none;
     border: none;
@@ -226,14 +244,31 @@
     margin-left: 275px;
 }
 
+.rodape1{
+    margin-top: 350px;
+    margin-bottom: 0;
+    letter-spacing: 0.5rem;
+    width: 100%;
+    background-color: #195973;
+    
+}
 
-.Rodape{
-    margin-top: 650px;
+.rodape2{
+    margin-top: 50px;
     margin-bottom: -11px;
     letter-spacing: 0.5rem;
     width: 100%;
     background-color: #195973;
     
+}
+
+.rodape3{
+    margin-left: 0;
+    margin-top: 100rem;
+    margin-bottom: -11px;
+    letter-spacing: 0.5rem;
+    width: 100%;
+    background-color: #195973;
     
 }
 
@@ -395,7 +430,6 @@
 }
  
 .cartao{
-    border: solid 1px #195973;
     box-sizing: border-box;
 }
 
@@ -460,6 +494,45 @@
     margin-left: 69px;
     margin-right: 69px;
     margin-bottom: 444x;
-    background: url(img/imageskids\ 1.png), lightgray 50% / cover no-repeat;
+}
+
+.imagemC1, .imagemC4{
+    background: url(img/imageskids\ 2.png), lightgray 50% / cover no-repeat;
+}
+
+.imagemC2, .imagemC3{
+    background: url(img/hospital-veterinario.jpg), lightgray 50% / cover no-repeat;
+}
+
+.tituloC{
+    display: flex;
+    width: 243px;
+    height: 32px;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.paragrafoC{
+    display: flex;
+    width: 339px;
+    height: 183px;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-left: 80px;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
  
