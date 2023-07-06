@@ -8,43 +8,33 @@
 }
 
 .corpo {
+    
+    background-image: url("img/MacBook\ Air\ -\ 3fundoBolaFinal2.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+      
+    
+}
+
+.corpo4{
+    background-size: cover;
     background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
+    background-position: center;
+    background-image: url(img/bolinhaEscuro.png);
 }
 
-.corpo1{
-    width: 85rem;  
-    background-image: url(img/MacBook\ Air\ -\ 2bolinhas22.png);
-}
-
-.corpo2{
-    width: 85rem;  
-    background-image: url(img/MacBook\ Air\ -\ 2bolinhas2.png);
-}
-
-.corpo3{
-    width: 85rem; 
-    height: 100rem; 
-    background-image: url(img/MacBook\ Air\ -\ 2bolinhas2.png);
-}
 
 .foto1 {
+    background-image: url(img/abstract_blur_background_with_beach_themed_design_2701\ 1fundoFinal.png);
     margin: 0;
     padding: 0;
-    width: 85rem; 
-    height: 46rem; 
-    flex-shrink: 0;
-    position: static;
-    background: url(img/abstract_blur_background_with_beach_themed_design_2701\ 1.png), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position:top;
+   
 }
 
-.navbar,.navbar3,.rodapeCen{
+.navbar,.navbar3,.navbar4,.rodapeCen{
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
@@ -93,97 +83,18 @@
 }
 
 .flor{
-    margin-top: 40%;
+    margin-top: 45%;
+    margin-left: 45%;
     padding: 0%;
+    width: 694px;
+    height: 640px;
+    flex-shrink: 0;
 }
 
-.amarelo{
-    width: 269px;
-    height: 266px;
-    flex-shrink: 0;
-    border: #FFF solid 5px;
-    border-radius: 1000px;
-    background: #F2B90F;
-    margin-top: 0px;
-    margin-left: 968px;
-    margin-right: 43px;
-    margin-bottom: 0px;
-    box-sizing: border-box; 
-    
-}
-
-.azulEscuro{
-    width: 269px;
-    height: 267px;
-    flex-shrink: 0;
-    border: #FFF solid 5px;
-    border-radius: 1000px;
-    background: #195973;
-    margin-top: -110px;
-    margin-left: 792px;
-    margin-right: 219px;
-    margin-bottom: 408px;
-    box-sizing: border-box; 
-    
-}
-
-.verdeEscuro{
-    width: 269px;
-    height: 266px;
-    flex-shrink: 0;
-    border: #FFF solid 5px;
-    border-radius: 1000px;
-    background: #255954;
-    margin-top: -775px;
-    margin-left: 545px;
-    margin-right: 468px;
-    margin-bottom: 0px;
-    box-sizing: border-box;
-    
-}
-
-.laranja{
-    width: 269px;
-    height: 266px;
-    flex-shrink: 0;
-    border: #FFF solid 5px;
-    border-radius: 1000px;
-    background: #F28705;
-    margin-top: -500px;
-    margin-left: 565px;
-    margin-right: 446px;
-    margin-bottom: 572px;
-    box-sizing: border-box; 
-    
-}
-
-.azul{
-    width: 269px;
-    height: 266px;
-    flex-shrink: 0;
-    border: #FFF solid 5px;
-    border-radius: 1000px;
-    background: #4E84A6;
-    margin-top: -850px;
-    margin-left: 834px;
-    margin-right: 177px;
-    margin-bottom: 0px;
-    box-sizing: border-box; 
-    
-}
-
-.fotoCrianca1{
-    width: 418px;
-    height: 292px;
-    flex-shrink: 0;
-    border: #FFF solid 5px;
-    border-radius: 500px;
-    margin-top: -130px;
-    margin-left: 664px;
-    margin-right: 198px;
-    margin-bottom: 100px;
-    box-sizing: border-box;
-    background: url(img/imageskids\ 1.png), lightgray 50% / cover no-repeat;
+.imagemFlor{
+    background-image: url(img/Group\ 10flor.png);
+    max-width: 100%;
+    height: 100%;
 }
 
 .segundaParte{
@@ -265,6 +176,16 @@
 .rodape3{
     margin-left: 0;
     margin-top: 100rem;
+    margin-bottom: -11px;
+    letter-spacing: 0.5rem;
+    width: 100%;
+    background-color: #195973;
+    
+}
+
+.rodape4{
+    margin-left: 0;
+    margin-top: 15rem;
     margin-bottom: -11px;
     letter-spacing: 0.5rem;
     width: 100%;
@@ -535,4 +456,89 @@
     font-weight: 700;
     line-height: normal;
 }
- 
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.perfilDados{
+    color: #FFF;
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.perfilFoto{
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    stroke-width: 8px;
+    stroke: #FFF;
+    background-image: url(img/Frame\ 25.png);
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.perfilNome{
+    display: flex;
+    width: 432px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 3px solid #FFF;
+    margin-top: 11.375rem;
+    margin-right: 40rem;
+    margin-bottom: 2.5rem;
+}
+
+.perfilEmail{
+    display: flex;
+    width: 432px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 3px solid #FFF;
+    margin-top: 2.5rem;
+    margin-right: 40rem;
+    margin-bottom: 2.5rem;
+}
+
+.perfilLembrete{
+    display: flex;
+    width: 432px;
+    padding: 16px 24px 54px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    border-radius: 15px;
+    border: 3px solid #FFF;
+    margin-top: 2.5rem;
+    margin-right: 40rem;
+    margin-bottom: 2.5rem;
+}
+
+.botaoEncerrar{
+    display: inline-flex;
+    height: 51px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 100px;
+    border: 5px solid #F28705;
+    background: #F28705;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
