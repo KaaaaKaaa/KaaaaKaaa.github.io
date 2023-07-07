@@ -8,13 +8,10 @@
 }
 
 .corpo {
-    
-    background-image: url("img/MacBook\ Air\ -\ 3fundoBolaFinal2.png");
+    background-image: url("img/MacBook\ Air\ -\ 3fundoBolaFinal6.png");
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
-      
-    
 }
 
 .corpo4{
@@ -26,11 +23,13 @@
 
 
 .foto1 {
-    background-image: url(img/abstract_blur_background_with_beach_themed_design_2701\ 1fundoFinal.png);
+    background-image: url(img/abstract_blur_background_with_beach_themed_design_2701\ 1fundoFinal4.png);
     margin: 0;
     padding: 0;
+    background-size:auto;
     background-repeat: no-repeat;
     background-position:top;
+    
    
 }
 
@@ -40,6 +39,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar2,.navbar3{
+    background-color: #195973;
 }
 
 
@@ -80,6 +83,11 @@
 .logo,.logo2,.rodapeLogo,.rodapeLogo2{
     width: auto;
     height: auto;
+}
+
+.parteDois{
+    margin-top: -30%;
+    margin-bottom: 10%;
 }
 
 .flor{
@@ -175,7 +183,7 @@
 
 .rodape3{
     margin-left: 0;
-    margin-top: 100rem;
+    margin-top: 10rem;
     margin-bottom: -11px;
     letter-spacing: 0.5rem;
     width: 100%;
@@ -213,6 +221,11 @@
 
 .rodapeSocial{
     margin-left: 50%;
+}
+
+.rodapeSocial5{
+    margin-top: 10%;
+    margin-left: 15%;
 }
 
 #slider {
@@ -457,7 +470,7 @@
     line-height: normal;
 }
 
-.perfil{
+.perfil,.conteudo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -541,4 +554,68 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
+}
+
+.texto{
+    margin-top: -10%;
+    margin-left: 10%;
+    width: 500px;
+    height: 900px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #195973;
+    align-items: top;
+}
+
+.textoTitulo{
+    display: flex;
+    width: 365px;
+    height: 114px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.textoTexto{
+    display: flex;
+    width: 442px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin-left: 10%;
+}
+
+.fotoPai{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.fotoFilho{
+    width: 100%;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+.fotoNeto{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: left;
+    padding: 10%;
+}
+
+.foto{
+    flex: 35%;
+    overflow: scroll;
+    border-radius: 15%;
 }
