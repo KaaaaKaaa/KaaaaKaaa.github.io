@@ -21,7 +21,6 @@
     background-image: url(img/bolinhaEscuro.png);
 }
 
-
 .foto1 {
     background-image: url(img/abstract_blur_background_with_beach_themed_design_2701\ 1fundoFinal4.png);
     margin: 0;
@@ -29,11 +28,7 @@
     background-size:auto;
     background-repeat: no-repeat;
     background-position:top;
-    
-   
 }
-
-
 
  .navbar, .navbar3, .navbar4, .rodapeCen {
     margin-left: 0.625rem;
@@ -189,6 +184,14 @@
     margin-left: 0;
     margin-top: 15rem;
     margin-bottom: -0.6875rem;
+    letter-spacing: 0.5rem;
+    width: 100%;
+    background-color: #195973;
+}
+
+.rodape5 {
+    margin-top: 21.875rem;
+    margin-bottom: 0;
     letter-spacing: 0.5rem;
     width: 100%;
     background-color: #195973;
@@ -600,3 +603,56 @@ flex: 35%;
 overflow: scroll;
 border-radius: 15%;
 }
+
+.corpo6{
+    background-image: url(img/MacBook\ Air\ -\ 3login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.caixaLogin{
+    width: 500px;
+    height: 500px;
+    background-color: #195973;
+    border-radius: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    
+}
+
+.logo6{
+    margin-bottom: 2.5rem;
+    margin-left: 7rem;
+    padding-top: 2.5rem;
+}
+
+.barraNome,.barraSenha {
+    display: flex;
+    border: none;
+    background-color: #FFF;
+    border-radius: 1rem;
+    border: 0.3125rem solid #FFF;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+.nome,.senha {
+    margin-left: 3rem;
+    margin-bottom: 0.25rem;
+    color: #FFF;
+    font-family: Montserrat Alternates;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1.5rem;
+}
+
+.botaoL1{
+    margin-left: 11rem;
+    margin-top: 2.5rem;    
+}
+
