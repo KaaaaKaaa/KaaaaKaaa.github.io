@@ -50,10 +50,33 @@
     margin-right: 1.875rem;
 }
 
+.BarraPesquisa.list{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.BarraPesquisa.active input{
+    border-radius: 5px 5px 0 0;
+}
+
+.BarraPesquisa.active .list{
+    padding: 10px 10px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.BarraPesquisa.active .list li{
+    display: block;
+}
+
 .pesquisa {
     background: none;
     border: none;
     margin-left: 0.625rem;
+    outline: none;
 }
 
 .lupa, .lupa2 {
@@ -223,6 +246,14 @@
     margin-left: 15%;
 }
 
+.frutas{
+    display: none;    
+   } 
+
+#list {
+    font-size:  1.5em;
+    margin-left: 90px;
+}
 #slider {
     margin: 0 auto;
     width: 50.625rem;
@@ -358,6 +389,13 @@
     background: #F28705;
 }
 
+#lembrete_remover,
+#lembrete_adicionar{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .cartao {
 box-sizing: border-box;
 
@@ -460,7 +498,7 @@ height: 10.8125rem;
 flex-direction: column;
 flex-shrink: 0;
 margin-left: 3.875rem;
-color: #FFF;
+color: #ffffff;
 font-size: 1rem;
 font-family: Montserrat Alternates;
 font-style: normal;
@@ -513,6 +551,8 @@ border: 0.3rem solid #FFF;
 margin-top: 2rem;
 margin-right: 25rem;
 margin-bottom: 2.5rem;
+background-color: #fff;
+color: black;
 }
 
 .perfilLembrete {
@@ -521,6 +561,7 @@ flex-direction: column;
 align-items: flex-start;
 gap: 0.5rem;
 }
+
 
 .botaoEncerrar,
  .botaoL{
@@ -629,17 +670,15 @@ border-radius: 15%;
     padding-top: 2.5rem;
 }
 
-.barraNome,.barraSenha {
+.barraNome,.barraSenha, .barraEmail {
     display: flex;
     border: none;
     background-color: #FFF;
     border-radius: 1rem;
     border: 0.3125rem solid #FFF;
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
 }
 
-.nome,.senha {
+.nome,.senha, .Email, .titulo{
     margin-left: 3rem;
     margin-bottom: 0.25rem;
     color: #FFF;
@@ -648,11 +687,16 @@ border-radius: 15%;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 1.5rem;
 }
 
 .botaoL1{
-    margin-left: 11rem;
-    margin-top: 2.5rem;    
+    margin-left: 5rem;
+    margin-top: 1.5rem;    
+}
+
+.barraLogin{
+    margin-left: 4rem;
+    margin-right: 4rem;
+ 
 }
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0170ac469d.js" crossorigin="anonymous"></script>
 </head>
     <body class=" corpo corpo4">
         <nav class="navbar navbar4">
@@ -32,8 +33,14 @@
                     Kaelborba@gmail.com
                 </div>
                 <div class="perfilLembrete">
-                    <div class="lembrete1"> Lembrete 1</div>  
-                    <div class="lembrete2"> Lembrete 2</div>                      
+                    <div class="perfilLembreteInnerDiv">
+                    </div>
+                    <div>
+                        <button id="lembrete_adicionar" name="Adicionar lembrete" onclick="addLembrete()" placeholder="Adicionar lembrete"><i class="fa-solid fa-plus"></i><!--Adicionar Lembrete--></button>
+                        <button id="lembrete_remover" name="Remover lembrete" onclick="removeLembrete()" placeholder="Adicionar lembrete"><i class="fa-solid fa-minus"></i><!--Remover Lembrete--></button>            
+                        <script src="script.js"></script>
+                        <script src="sugestoes.js"></script>
+                    </div>
                 </div>
                 <button class="botaoEncerrar">Excluir conta</button>
             </div>
