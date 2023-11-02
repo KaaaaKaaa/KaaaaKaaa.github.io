@@ -1,7 +1,9 @@
 const express = require('express');
 
+const lembreteController = require ('./controllers/lembreteController');
+
 const router = express.Router();
 
-router.get('/lembretes', (req,res) => res.status(200).send('router funcionando'))
+router.get('/lembretes', lembreteController.getAll);
 
 module.exports = router;

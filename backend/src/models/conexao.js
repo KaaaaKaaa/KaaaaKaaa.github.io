@@ -1,7 +1,10 @@
 const pgp = require('pg-promise')();
+require('dotenv').config();
+
+console.log(process.env.PG_HOST)
 
 // Configuração da conexão com o PostgreSQL
-const connection = {
+const conexao = {
   host: process.env.PG_HOST,  // Host do PostgreSQL
   port: 5432,         // Porta padrão do PostgreSQL
   database: process.env.PG_DATABASE,
@@ -10,4 +13,4 @@ const connection = {
 };
 
 // Crie uma instância do banco de dados
-module.exports = pgp(connection);
+module.exports = pgp(conexao);
