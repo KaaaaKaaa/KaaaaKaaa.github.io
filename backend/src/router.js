@@ -2,6 +2,8 @@ const express = require('express');
 
 const lembreteController = require('./controllers/lembreteController');
 const lembreteMiddieware = require('./middiewares/lembreteMiddieware');
+const usuarioController = require('./controllers/usuarioController');
+const usuarioMiddieware = require('./middiewares/usuarioMiddieware');
 
 const router = express.Router();
 
@@ -14,4 +16,13 @@ router.put('/lembrete/:id',
     lembreteController.updateLembrete,
     )
 
+
+router.get('/usuarios', usuarioController.getAll);
+router.post('/criarUsuario', usuarioMiddieware.validateNomeUsuario, usuarioMiddieware.validateEmail, usuarioMiddieware.validateSenha, usuarioController.criarUsuario);
+router.delete('/usuario/:id', usuarioController.deletaUsuario);
+router.put('/usuario/:id',
+    usuarioMiddieware.validateNomeUsuario,
+    usuarioController.updateUsuario,
+    )
+    
 module.exports = router;
