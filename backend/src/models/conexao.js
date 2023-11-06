@@ -1,16 +1,18 @@
-const pgp = require('pg-promise')();
+const mysql = require('mysql2/promise');
 require('dotenv').config();
 
-console.log(process.env.PG_HOST)
+console.log(process.env.MYSQL_HOST)
+console.log(process.env.MYSQL_USER)
+console.log(process.env.MYSQL_PASSWORD)
+console.log(process.env.MYSQL_DB)
 
-// Configuração da conexão com o PostgreSQL
-const conexao = {
-  host: process.env.PG_HOST,  // Host do PostgreSQL
-  port: 5432,         // Porta padrão do PostgreSQL
-  database: process.env.PG_DATABASE,
-  user: process.env.PG_USER,
-  password: process.env.PG_PASSWORD
-};
 
-// Crie uma instância do banco de dados
-module.exports = pgp(conexao);
+const conexao = mysql.createPool({
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DB,
+});
+
+module.exports = conexao;
+
